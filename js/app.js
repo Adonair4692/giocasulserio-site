@@ -42,6 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let previousTime = performance.now();
     let invisible = false;
     let caught = false;
+    let speedMultiplier = 1;
     let nextDisappearance = performance.now() + randomBetween(4000, 8000);
 
     function randomBetween(minimum, maximum) {
@@ -67,7 +68,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     function chooseDiagonalDirection() {
-      const speed = randomBetween(48, 75);
+      const speed = randomBetween(48, 75) * speedMultiplier ;
 
       const diagonalAngles = [
         randomBetween(35, 55),
@@ -259,8 +260,18 @@ swan.addEventListener('pointerdown', event => {
 
     swan.classList.remove('is-caught');
 
-    velocityX = savedVelocityX;
-    velocityY = savedVelocityY;
+    const previousMultiplier = speedMultiplier;
+
+speedMultiplier = Math.min(
+  speedMultiplier * 1.35,
+  3
+);
+
+const appliedIncrease =
+  speedMultiplier / previousMultiplier;
+
+velocityX = savedVelocityX * appliedIncrease;
+velocityY = savedVelocityY * appliedIncrease;
 
     caught = false;
     previousTime = performance.now();
