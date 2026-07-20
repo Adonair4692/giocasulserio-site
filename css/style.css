@@ -80,9 +80,116 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .console-core::before { content: ''; position: absolute; inset: 15px; border: 1px dashed rgba(73,183,170,.18); border-radius: 25px; pointer-events: none; }
 .console-screen { height: 100%; border-radius: 20px; border: 1px solid var(--line); background: radial-gradient(circle at 50% 45%, rgba(73,183,170,.17), transparent 44%), #05110f; display: grid; place-items: center; padding: 2rem; position: relative; overflow: hidden; }
 .console-screen::after { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(0deg, rgba(255,255,255,.018), rgba(255,255,255,.018) 1px, transparent 1px, transparent 5px); pointer-events: none; }
-.swan-symbol { width: 132px; color: var(--petrol-light); opacity: .9; }
-.console-status { position: absolute; left: 26px; bottom: 22px; right: 26px; display: flex; justify-content: space-between; align-items: center; color: var(--petrol-light); font: 700 .7rem/1 var(--sans); letter-spacing: .15em; text-transform: uppercase; }
-.console-status i { width: 8px; height: 8px; border-radius: 50%; background: var(--petrol-light); box-shadow: 0 0 14px rgba(73,183,170,.7); }
+
+.swan-symbol {
+  position: absolute;
+  width: 132px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--petrol-light);
+  opacity: .9;
+  pointer-events: auto;
+cursor: pointer;
+touch-action: manipulation;
+-webkit-tap-highlight-color: transparent;
+outline: none;
+user-select: none;
+-webkit-user-select: none;
+-webkit-user-drag: none;
+  z-index: 2;
+  will-change: left, top, opacity;
+  transition: opacity .45s ease;
+}
+
+.console-status {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: max-content;
+  max-width: calc(100% - 40px);
+  z-index: 3;
+
+  color: var(--petrol-light);
+  font: 700 .7rem/1 var(--sans);
+  letter-spacing: .15em;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.console-status i {
+  flex: 0 0 auto;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--petrol-light);
+  box-shadow: 0 0 14px rgba(73,183,170,.7);
+}
+
+/* Achievement segreto del cigno */
+.swan-achievement {
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  transform: translate(-50%, 10px);
+
+  width: max-content;
+  max-width: calc(100% - 24px);
+  padding: .65rem .9rem;
+
+  border: 1px solid rgba(92, 255, 224, .48);
+  border-radius: 14px;
+  background: rgba(3, 18, 15, .94);
+
+  color: var(--petrol-light);
+  font: 600 .62rem/1.4 var(--sans);
+  letter-spacing: .08em;
+  text-align: center;
+  text-transform: uppercase;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 6;
+
+  box-shadow:
+    0 0 12px rgba(73, 183, 170, .28),
+    0 0 28px rgba(73, 183, 170, .16);
+
+  transition:
+    opacity .25s ease,
+    transform .25s ease,
+    visibility .25s ease;
+}
+
+.swan-achievement[hidden] {
+  display: none;
+}
+
+.swan-achievement.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+.swan-achievement strong {
+  display: block;
+  margin-bottom: .2rem;
+  color: var(--white);
+  font-size: .76rem;
+  letter-spacing: .12em;
+}
+
 .cartridge-ring { position: absolute; inset: -24px; pointer-events: none; }
 .cartridge { position: absolute; width: 126px; min-height: 82px; border: 1px solid rgba(73,183,170,.34); background: rgba(7,23,21,.94); border-radius: 12px; padding: .8rem; color: var(--muted); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; box-shadow: 0 10px 30px rgba(0,0,0,.3); }
 .cartridge strong { display: block; color: var(--white); font-size: .8rem; margin-bottom: .35rem; }
@@ -301,4 +408,37 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .js .reveal { opacity: 1; transform: none; }
+}
+.hero-title .swan-glow-text {
+  color: #010706;
+  -webkit-text-stroke: 1px rgba(69, 230, 205, 0.5);
+  text-shadow:
+    0 0 2px rgba(69, 230, 205, 1),
+    0 0 7px rgba(35, 211, 184, 0.95),
+    0 0 15px rgba(20, 180, 157, 0.8),
+    0 0 28px rgba(11, 129, 113, 0.65);
+}
+
+/* Cigno intercettato */
+.swan-symbol.is-caught {
+  animation: swan-caught-pulse .7s ease-out;
+  filter:
+    brightness(1.5)
+    drop-shadow(0 0 5px rgba(92, 255, 224, 1))
+    drop-shadow(0 0 15px rgba(73, 183, 170, .95))
+    drop-shadow(0 0 32px rgba(73, 183, 170, .75));
+}
+
+@keyframes swan-caught-pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  45% {
+    transform: translate(-50%, -50%) scale(1.16);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
