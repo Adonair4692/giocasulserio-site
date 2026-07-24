@@ -454,3 +454,14 @@ white-space: nowrap;
     transform: translate(-50%, -50%) scale(1);
   }
 }
+
+.console-heading h2 {
+  font-size: clamp(2.7rem, 4vw, 4rem);
+  max-width: 760px;
+}
+
+.console-card h3 {
+  min-height: 2.2em;
+  display: flex;
+  align-items: flex-end;
+}
