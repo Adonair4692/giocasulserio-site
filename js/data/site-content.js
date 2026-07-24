@@ -27,28 +27,28 @@ window.GSS.site = {
 window.GSS.consoles = [
   {
     id: 'ttx', code: 'TTX',
-    label: {it: 'TTX Console', en: 'TTX Console'},
-    description: {it: 'Mappe, nodi logistici, timeline e decisioni concatenate.', en: 'Maps, logistics nodes, timelines and connected decisions.'}
+    label: {it: 'Esercitazioni TableTop', en: 'TableTop Excercise'},
+    description: {it: 'Mappe, filiere logistiche, gestione risorse e scelte decisive.', en: 'Maps, supply chaines, resource management and decision points.'}
   },
   {
-    id: 'wargame', code: 'WG',
-    label: {it: 'Wargame Console', en: 'Wargame Console'},
-    description: {it: 'Influenza, ordini, scenari avversariali e apprendimento strategico.', en: 'Influence, orders, adversarial scenarios and strategic learning.'}
+    id: 'Wargame', code: 'WG',
+    label: {it: 'Wargames Addestrativi', en: 'Educational Wargames'},
+    description: {it: 'Influenza, strategia, scenari conflittuali e apprendimento riflessivo.', en: 'Influence, strategy, war scenarios and reflection-in-action'}
   },
   {
     id: 'boardgame', code: 'BG',
-    label: {it: 'Board Game Console', en: 'Board Game Console'},
-    description: {it: 'Plance, carte, risorse e sistemi cooperativi o competitivi.', en: 'Boards, cards, resources and cooperative or competitive systems.'}
+    label: {it: 'Board Games', en: 'Board Games'},
+    description: {it: 'Plance, carte, dadi e dinamiche coopetitive.', en: 'Boards, cards, dice and coopetitive dynamics.'}
   },
   {
     id: 'ssg', code: 'SSG',
-    label: {it: 'Soft Skills Gaming', en: 'Soft Skills Gaming'},
-    description: {it: 'Leadership, relazione, comunicazione e dinamiche emergenti.', en: 'Leadership, relationships, communication and emergent dynamics.'}
+    label: {it: 'Formazione Soft Skills ', en: 'Soft Skills Training'},
+    description: {it: 'Leadership, comunicazione efficace e dinamiche di gruppo.', en: 'Leadership, effective communication and group dynamics.'}
   },
   {
     id: 'indie', code: 'IND',
-    label: {it: 'Indie Game Console', en: 'Indie Game Console'},
-    description: {it: 'Esperienze digitali, scelte narrative e prototipi indipendenti.', en: 'Digital experiences, narrative choices and independent prototypes.'}
+    label: {it: 'Indie Games', en: 'Indie Games'},
+    description: {it: 'Esperienze immersive, scelte narrative e prototipi indipendenti.', en: 'Immersive experiences, narrative choices and independent prototypes.'}
   }
 ];
 
