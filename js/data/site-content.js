@@ -57,8 +57,8 @@ window.GSS.consoles = [
       en: 'Board Games'
     },
     description: {
-      it: 'Plance, carte, dadi e dinamiche coopetitive.',
-      en: 'Boards, cards, dice and coopetitive dynamics.'
+      it: 'Plance, carte, dadi, tempo limitato e dinamiche coopetitive.',
+      en: 'Boards, cards, dice, limited time and coopetitive dynamics.'
     }
   },
   {
