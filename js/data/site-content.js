@@ -26,29 +26,64 @@ window.GSS.site = {
 
 window.GSS.consoles = [
   {
-    id: 'ttx', code: 'TTX',
-    label: {it: 'Esercitazioni TableTop', en: 'TableTop Excercise'},
-    description: {it: 'Mappe, filiere logistiche, gestione risorse e scelte decisive.', en: 'Maps, supply chaines, resource management and decision points.'}
+    id: 'ttx',
+    code: 'TTX',
+    label: {
+      it: 'Esercitazioni tabletop',
+      en: 'Tabletop Exercises'
+    },
+    description: {
+      it: 'Mappe, filiere logistiche, gestione delle risorse e scelte decisive.',
+      en: 'Maps, supply chains, resource management and critical decisions.'
+    }
   },
   {
-    id: 'Wargame', code: 'WG',
-    label: {it: 'Wargames Addestrativi', en: 'Educational Wargames'},
-    description: {it: 'Influenza, strategia, scenari conflittuali e apprendimento riflessivo.', en: 'Influence, strategy, war scenarios and reflection-in-action'}
+    id: 'Wargame',
+    code: 'WG',
+    label: {
+      it: 'Wargame addestrativi',
+      en: 'Educational Wargames'
+    },
+    description: {
+      it: 'Influenza, strategia, scenari conflittuali e apprendimento riflessivo.',
+      en: 'Influence, strategy, adversarial scenarios and reflection-in-action.'
+    }
   },
   {
-    id: 'boardgame', code: 'BG',
-    label: {it: 'Board Games', en: 'Board Games'},
-    description: {it: 'Plance, carte, dadi e dinamiche coopetitive.', en: 'Boards, cards, dice and coopetitive dynamics.'}
+    id: 'boardgame',
+    code: 'BG',
+    label: {
+      it: 'Board game',
+      en: 'Board Games'
+    },
+    description: {
+      it: 'Plance, carte, dadi e dinamiche coopetitive.',
+      en: 'Boards, cards, dice and coopetitive dynamics.'
+    }
   },
   {
-    id: 'ssg', code: 'SSG',
-    label: {it: 'Formazione Soft Skills ', en: 'Soft Skills Training'},
-    description: {it: 'Leadership, comunicazione efficace e dinamiche di gruppo.', en: 'Leadership, effective communication and group dynamics.'}
+    id: 'ssg',
+    code: 'SSG',
+    label: {
+      it: 'Formazione soft skills',
+      en: 'Soft Skills Training'
+    },
+    description: {
+      it: 'Leadership, comunicazione efficace e dinamiche di gruppo.',
+      en: 'Leadership, effective communication and group dynamics.'
+    }
   },
   {
-    id: 'indie', code: 'IND',
-    label: {it: 'Indie Games', en: 'Indie Games'},
-    description: {it: 'Esperienze immersive, scelte narrative e prototipi indipendenti.', en: 'Immersive experiences, narrative choices and independent prototypes.'}
+    id: 'indie',
+    code: 'IND',
+    label: {
+      it: 'Indie game',
+      en: 'Indie Games'
+    },
+    description: {
+      it: 'Esperienze immersive, scelte narrative e prototipi indipendenti.',
+      en: 'Immersive experiences, narrative choices and independent prototypes.'
+    }
   }
 ];
 
