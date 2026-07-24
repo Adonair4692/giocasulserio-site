@@ -29,7 +29,7 @@ window.GSSApp = window.GSSApp || {};
       <h3>${App.escape(App.local(pub.title))}</h3>
       <p>${App.escape(App.local(pub.abstract))}</p>
       ${detail ? `<p><small>${App.escape(detail)}</small></p>` : ''}
-      <div class="card-actions">${pub.linkedProject ? `<a class="card-link" href="progetto.html?slug=${encodeURIComponent(App.projectById(pub.linkedProject)?.slug || '')}">${App.escape(App.t('open'))}</a>` : ''}${pub.url ? App.externalLink(pub.url, App.t('consult'), 'card-link card-link-primary') : `<span class="card-link card-link-disabled" aria-disabled="true">${App.escape(App.t('comingSoon'))}</span>`}</div>
+      <div class="card-actions">${pub.linkedProject ? `<a class="card-link" href="cartuccia.html?slug=${encodeURIComponent(App.projectById(pub.linkedProject)?.slug || '')}">${App.escape(App.t('open'))}</a>` : ''}${pub.url ? App.externalLink(pub.url, App.t('consult'), 'card-link card-link-primary') : `<span class="card-link card-link-disabled" aria-disabled="true">${App.escape(App.t('comingSoon'))}</span>`}</div>
     </article>`;
   }
   function serviceCard(service) {
@@ -47,7 +47,7 @@ window.GSSApp = window.GSSApp || {};
       <span class="console-number"><span>CON-${String(index + 1).padStart(2,'0')}</span><span>ONLINE</span></span>
       <h3>${App.escape(App.local(console.label))}</h3><p>${App.escape(App.local(console.description))}</p><span class="console-line" aria-hidden="true"></span>
     </button>`).join('');
-    target.querySelectorAll('[data-console-id]').forEach(btn => btn.addEventListener('click', () => { location.href = `progetti.html?console=${encodeURIComponent(btn.dataset.consoleId)}`; }));
+    target.querySelectorAll('[data-console-id]').forEach(btn => btn.addEventListener('click', () => { location.href = `cartucce.html?console=${encodeURIComponent(btn.dataset.consoleId)}`; }));
   }
   function renderFeatured() {
     const target = document.querySelector('[data-featured-projects]');

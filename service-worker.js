@@ -1,6 +1,6 @@
 const CACHE = 'gss-static-v2-20260718';
 const CORE = [
-  '/', '/index.html', '/progetti.html', '/ricerca-pubblicazioni.html', '/servizi.html', '/chi-sono.html', '/contatti.html', '/cerca.html',
+  '/', '/index.html', '/cartucce.html', '/ricerca-pubblicazioni.html', '/servizi.html', '/chi-sono.html', '/contatti.html', '/cerca.html',
   '/css/style.css', '/assets/icons/favicon.svg', '/assets/icons/swan.svg'
 ];
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting())));

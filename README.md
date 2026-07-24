@@ -26,8 +26,8 @@ La hero è visibile subito e non dipende dallo scroll. Il service worker viene r
 ## File principali
 
 - `index.html`: homepage
-- `progetti.html`: archivio filtrabile
-- `progetto.html`: pagina dinamica del singolo progetto
+- `cartucce.html`: archivio filtrabile
+- `cartuccia.html`: pagina dinamica del singolo progetto
 - `ricerca-pubblicazioni.html`: pubblicazioni
 - `servizi.html`: servizi
 - `chi-sono.html`: profilo

@@ -35,7 +35,7 @@ window.GSSApp = window.GSSApp || {};
     if (!url) return `<span class="${className} card-link-disabled" aria-disabled="true">${App.escape(label || App.t('comingSoon'))}</span>`;
     return `<a class="${className}" href="${App.escape(url)}" target="_blank" rel="noopener noreferrer" data-external-action>${App.escape(label)}<span class="sr-only"> — ${App.escape(App.t('newWindow'))}</span></a>`;
   };
-  App.projectUrl = function (project) { return `progetto.html?slug=${encodeURIComponent(project.slug)}`; };
+  App.projectUrl = function (project) { return `cartuccia.html?slug=${encodeURIComponent(project.slug)}`; };
   App.consoleById = function (id) { return (G.consoles || []).find(item => item.id === id); };
   App.projectById = function (id) { return (G.projects || []).find(item => item.id === id); };
   App.publicationById = function (id) { return (G.publications || []).find(item => item.id === id); };

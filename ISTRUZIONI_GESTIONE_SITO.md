@@ -43,7 +43,7 @@ Mantieni sempre entrambe le lingue.
 5. Aggiungi una virgola tra il progetto precedente e quello nuovo.
 6. Usa un `id` e uno `slug` unici, minuscoli e senza spazi.
 7. Inserisci una copertina in `assets/projects/`.
-8. Verifica `progetti.html`, ricerca e homepage.
+8. Verifica `cartucce.html`, ricerca e homepage.
 
 ## 5. Modificare un progetto
 
