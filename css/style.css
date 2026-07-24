@@ -347,7 +347,7 @@ user-select: none;
 
 @media (min-width: 901px) {
   .hero-inner {
-    transform: translateY(-28px);
+    transform: translateY(-50px);
   }
 }
 
