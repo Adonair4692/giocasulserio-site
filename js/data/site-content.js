@@ -7,8 +7,8 @@ window.GSS.site = {
   linkedin: 'https://it.linkedin.com/in/adriano-pantaleo-bb821123b',
   url: 'https://www.giocasulserio.it',
   claim: {
-    it: 'La caccia ai cigni neri è aperta.',
-    en: 'The hunt for black swans is open.'
+    it: 'La caccia ai Cigni Neri è aperta',
+    en: 'The hunt for Black Swans is open'
   },
   subtitle: {
     it: 'Serious game, educational wargame e tabletop exercise per testare pianificazioni, migliorare decisioni e risposte emergenziali in scenari complessi.',
