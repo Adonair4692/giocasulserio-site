@@ -416,6 +416,8 @@ user-select: none;
   .js .reveal { opacity: 1; transform: none; }
 }
 .hero-title .swan-glow-text {
+  display: inline-block;
+white-space: nowrap;
   color: #010706;
   -webkit-text-stroke: 1px rgba(69, 230, 205, 0.5);
   text-shadow:
