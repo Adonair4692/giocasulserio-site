@@ -462,6 +462,5 @@ white-space: nowrap;
 
 .console-card h3 {
   min-height: 2.2em;
-  display: flex;
-  align-items: flex-end;
+  display: block;
 }
