@@ -63,7 +63,7 @@ window.GSS.consoles = [
   },
   {
     id: 'ssg',
-    code: 'SSG',
+    code: 'SST',
     label: {
       it: 'Formazione soft skills',
       en: 'Soft Skills Training'
