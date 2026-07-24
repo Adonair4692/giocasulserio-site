@@ -120,7 +120,7 @@ window.GSS.ui = {
     start: 'Start exploring', selectSystem: 'Select a console', featured: 'Featured projects', allProjects: 'Open all projects',
     institutional: 'Scientific & institutional', independent: 'Independent productions', publications: 'Research, books & publications',
     projectsIntro: 'Explore the library by console, ownership and status.', servicesClaim: 'Design. Test. Evaluate.',
-    collaborations: 'Collaborations and contexts', archiveNumbers: 'Archive figures', contactTitle: 'Let’s test a scenario.',
+    collaborations: 'Collaborations and contexts', archiveNumbers: 'Library figures', contactTitle: 'Let’s test a scenario.',
     contactText: 'For design, evaluation, tabletop exercises, talks and interventions.', write: 'Write to info@giocasulserio.it',
     searchTitle: 'Search the entire site', searchPlaceholder: 'E.g. Pompeii, emergency, soft skills…', searchNoResults: 'No results found.',
     all: 'All', projects: 'Projects', services: 'Services', buyable: 'For sale', coming: 'Coming soon', open: 'Open',
@@ -139,7 +139,7 @@ window.GSS.ui = {
     disclaimer: 'Gioca sul Serio is Adriano Pantaleo’s personal professional and scientific website. Opinions, content and independent projects published here do not necessarily represent the official positions of administrations, universities or organisations with which the author collaborates or has collaborated.',
     privacy: 'Privacy', preferences: 'Cookies & preferences', accessibility: 'Accessibility', credits: 'Credits', legal: 'Legal notes',
     details: 'Details', method: 'Method and purpose', attribution: 'Attribution', linkedPublications: 'Linked publications', status: 'Status', console: 'Console', ownership: 'Context', institution: 'Institution or collaboration',
-    notFoundTitle: 'Black swan not located.', notFoundText: 'The requested scenario is not in the archive.', backHome: 'Back to home',
+    notFoundTitle: 'Black swan not located.', notFoundText: 'The requested scenario is not in the library.', backHome: 'Back to home',
     menu: 'Open menu', language: 'Change language', newWindow: 'Opens in a new tab', copyLink: 'Copy link', copied: 'Link copied'
   }
 };
