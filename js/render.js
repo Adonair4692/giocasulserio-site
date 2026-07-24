@@ -44,7 +44,7 @@ window.GSSApp = window.GSSApp || {};
     const target = document.querySelector('[data-console-grid]');
     if (!target) return;
     target.innerHTML = G.consoles.map((console, index) => `<button class="console-card reveal" type="button" data-code="${App.escape(console.code)}" data-console-id="${App.escape(console.id)}" aria-label="${App.escape(App.local(console.label))}">
-      <span class="console-number"><span>SYS-${String(index + 1).padStart(2,'0')}</span><span>ONLINE</span></span>
+      <span class="console-number"><span>CON-${String(index + 1).padStart(2,'0')}</span><span>ONLINE</span></span>
       <h3>${App.escape(App.local(console.label))}</h3><p>${App.escape(App.local(console.description))}</p><span class="console-line" aria-hidden="true"></span>
     </button>`).join('');
     target.querySelectorAll('[data-console-id]').forEach(btn => btn.addEventListener('click', () => { location.href = `progetti.html?console=${encodeURIComponent(btn.dataset.consoleId)}`; }));
