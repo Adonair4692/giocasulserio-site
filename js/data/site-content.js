@@ -77,7 +77,7 @@ window.GSS.consoles = [
     id: 'indie',
     code: 'IND',
     label: {
-      it: 'Indie game',
+      it: 'Giochi Indie',
       en: 'Indie Games'
     },
     description: {
@@ -89,27 +89,27 @@ window.GSS.consoles = [
 
 window.GSS.ui = {
   it: {
-    navHome: 'Home', navProjects: 'Progetti', navResearch: 'Ricerca e pubblicazioni', navServices: 'Servizi', navAbout: 'Chi sono', navContacts: 'Contatti', navSearch: 'Cerca',
-    start: 'Avvia l’esplorazione', selectSystem: 'Seleziona una console', featured: 'Progetti in evidenza', allProjects: 'Apri tutti i progetti',
+    navHome: 'Home', navProjects: 'Libreria', navResearch: 'Ricerca e pubblicazioni', navServices: 'Servizi', navAbout: 'Chi sono', navContacts: 'Contatti', navSearch: 'Cerca',
+    start: 'Avvia l’esplorazione', selectSystem: 'Seleziona una console', featured: 'Cartucce in evidenza', allProjects: 'Apri tutte le cartucce',
     institutional: 'Scientifici e istituzionali', independent: 'Produzioni indipendenti', publications: 'Ricerca, libri e pubblicazioni',
     projectsIntro: 'Esplora la libreria per console, proprietà e stato.', servicesClaim: 'Progettare. Testare. Valutare.',
     collaborations: 'Collaborazioni e contesti', archiveNumbers: 'Numeri della libreria', contactTitle: 'Mettiamo alla prova uno scenario.',
     contactText: 'Per progettazione, valutazione, tabletop exercise, conferenze e interventi.', write: 'Scrivi a info@giocasulserio.it',
     searchTitle: 'Cerca in tutto il sito', searchPlaceholder: 'Es. Pompei, emergenza, soft skills…', searchNoResults: 'Nessun risultato trovato.',
-    all: 'Tutti', projects: 'Progetti', services: 'Servizi', buyable: 'Acquistabili', coming: 'Prossimamente', open: 'Apri',
+    all: 'Tutti', projects: 'Cartucce', services: 'Servizi', buyable: 'Acquistabili', coming: 'Prossimamente', open: 'Apri',
     play: 'Gioca', consult: 'Consulta', buy: 'Acquista', comingSoon: 'Prossimamente', external: 'Sito esterno',
     scoreLabel: 'Black Swan Score', finish: 'Concludi l’esplorazione', reset: 'Azzera percorso', settings: 'Gestisci esperienza',
     introTitle: 'La caccia ai cigni neri è aperta',
-    introText: 'Esplora progetti, console e pubblicazioni. Le interazioni significative aumentano il tuo Black Swan Score. Il percorso resta sul tuo dispositivo per sette giorni e non richiede registrazione.',
+    introText: 'Esplora console, cartucce e pubblicazioni. Le interazioni significative aumentano il tuo Black Swan Score. Il percorso resta sul tuo dispositivo per sette giorni e non richiede registrazione.',
     startScore: 'Inizia con punteggio', noScore: 'Esplora senza punteggio', soundOpt: 'Attiva i suoni per arricchire l’esperienza',
     platinumTitle: 'Hai platinato il sito',
-    platinumText: 'Hai esplorato progetti, console, pubblicazioni e metodi seguendo connessioni differenti. La caccia ai cigni neri non termina qui.',
+    platinumText: 'Hai esplorato console, cartucce, pubblicazioni e metodi seguendo connessioni differenti. Ma la caccia ai cigni neri non termina qui.',
     viewProfile: 'Vedi il profilo di esplorazione', continue: 'Continua', resetReplay: 'Azzera e rigioca',
     profileTitle: 'Il tuo profilo di esplorazione', resume: 'Riprendi l’esplorazione', close: 'Chiudi',
     soundOn: 'Suoni attivi', soundOff: 'Suoni disattivati', scoringOn: 'Punteggio attivo', scoringOff: 'Punteggio disattivato',
-    totalProjects: 'Progetti', instProjects: 'Istituzionali', indieProjects: 'Indipendenti', totalPubs: 'Pubblicazioni', consolesCount: 'Console',
+    totalProjects: 'Cartucce', instProjects: 'Istituzionali', indieProjects: 'Indipendenti', totalPubs: 'Pubblicazioni', consolesCount: 'Console',
     participants: 'Partecipanti', sessions: 'Sessioni', talks: 'Interventi', years: 'Anni di attività', toComplete: 'da aggiornare',
-    disclaimer: 'Gioca sul Serio è il sito professionale e scientifico personale di Adriano Pantaleo. Le opinioni, i contenuti e i progetti indipendenti pubblicati nel sito non rappresentano necessariamente le posizioni ufficiali delle amministrazioni, università o organizzazioni con cui l’autore collabora o ha collaborato.',
+    disclaimer: 'Gioca sul Serio è il sito professionale e scientifico personale di Adriano Pantaleo. Le opinioni e i contenuti pubblicati nel sito non rappresentano necessariamente le posizioni ufficiali delle amministrazioni, università o organizzazioni con cui l’autore collabora o ha collaborato.',
     privacy: 'Privacy', preferences: 'Cookie e preferenze', accessibility: 'Accessibilità', credits: 'Crediti', legal: 'Note legali',
     details: 'Dettagli', method: 'Metodo e finalità', attribution: 'Attribuzione', linkedPublications: 'Pubblicazioni collegate', status: 'Stato', console: 'Console', ownership: 'Ambito', institution: 'Ente o collaborazione',
     notFoundTitle: 'Cigno nero non localizzato.', notFoundText: 'Lo scenario richiesto non è presente nella libreria.', backHome: 'Torna alla homepage',
