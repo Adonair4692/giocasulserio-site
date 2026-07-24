@@ -345,6 +345,12 @@ user-select: none;
 .legal-copy p, .legal-copy li { color: #c0cbc8; }
 .section-light .legal-copy p, .section-light .legal-copy li { color: #374743; }
 
+@media (min-width: 901px) {
+  .hero-inner {
+    transform: translateY(-28px);
+  }
+}
+
 @media (max-width: 1080px) {
   .main-nav a { padding-inline: .48rem; font-size: .8rem; }
   .hero-inner { grid-template-columns: minmax(0,1fr) 430px; gap: 2rem; }
