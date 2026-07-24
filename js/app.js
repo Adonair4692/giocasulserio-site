@@ -223,7 +223,7 @@ swan.addEventListener('pointerdown', event => {
 
     } else if (scoringEnabled) {
       achievementTitle.textContent =
-        english ? 'SIGNAL RECORDED' : 'SEGNALE REGISTRATO';
+        english ? 'CAPTURE ALREADY RECORDED' : 'CATTURA GIÀ REGISTRATA';
 
       achievementText.textContent =
         english
