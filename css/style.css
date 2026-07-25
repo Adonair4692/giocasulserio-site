@@ -467,3 +467,7 @@ white-space: nowrap;
   min-height: 2.2em;
   display: block;
 }
+.featured-heading h2 {
+  font-size: clamp(2.7rem, 4vw, 4rem);
+  max-width: 760px;
+}
