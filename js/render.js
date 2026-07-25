@@ -133,11 +133,27 @@ window.GSSApp = window.GSSApp || {};
       </div></section>`;
     host.querySelector('[data-copy-link]')?.addEventListener('click', App.copyCurrentLink);
   }
-  function renderAboutLinks() {
-    document.querySelectorAll('[data-linkedin]').forEach(a => a.href = G.site.linkedin);
-    document.querySelectorAll('[data-orcid]').forEach(a => { a.href = `https://orcid.org/${G.site.orcid}`; a.textContent = G.site.orcid; });
-    document.querySelectorAll('[data-email]').forEach(a => { a.href = `mailto:${G.site.email}`; a.textContent = G.site.email; });
-  }
+  
+function renderAboutLinks() {
+  document.querySelectorAll('[data-linkedin]').forEach(a => {
+    a.href = G.site.linkedin;
+  });
+
+  document.querySelectorAll('[data-orcid]').forEach(a => {
+    a.href = `https://orcid.org/${G.site.orcid}`;
+
+    const value = a.querySelector('[data-orcid-value]');
+    if (value) value.textContent = G.site.orcid;
+  });
+
+  document.querySelectorAll('[data-email]').forEach(a => {
+    a.href = `mailto:${G.site.email}`;
+
+    const value = a.querySelector('[data-email-value]');
+    if (value) value.textContent = G.site.email;
+  });
+}
+  
   function renderAll() {
     renderConsoles(); renderFeatured(); renderStats(); renderManualStats(); renderCollaborations();
     if (document.querySelector('[data-project-archive]')) { readProjectFilterFromUrl(); renderProjectArchive(); }
