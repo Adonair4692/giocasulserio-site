@@ -138,7 +138,7 @@ window.GSS.ui = {
     write: 'Scrivi a info@giocasulserio.it',
 
     searchTitle: 'Cerca in tutto il sito',
-    searchPlaceholder: 'Es. TTX, wargame, soft skills…',
+    searchPlaceholder: 'Es. TTX, wargame, soft skills...',
     searchNoResults: 'Nessun risultato trovato.',
     closeSearch: 'Chiudi ricerca',
 
