@@ -146,7 +146,15 @@
   </div>
 </footer><aside class="search-panel" data-search-panel aria-hidden="true" aria-label="Ricerca">
   <div class="container search-shell">
-    <div class="search-head"><h2 data-i18n="searchTitle">Cerca in tutto il sito</h2><button class="icon-button" type="button" data-close-search aria-label="Chiudi">×</button></div>
+    <div class="search-head"><h2 data-i18n="searchTitle">Cerca in tutto il sito</h2><button
+  class="icon-button search-close"
+  type="button"
+  data-close-search
+  data-i18n-aria="closeSearch"
+>
+  <span data-i18n="closeSearch">Chiudi ricerca</span>
+  <span class="search-close-mark" aria-hidden="true">×</span>
+</button></div>
     <div class="search-box"><label class="sr-only" for="global-search">Ricerca</label><input id="global-search" type="search" data-global-search-input data-i18n-placeholder="searchPlaceholder" autocomplete="off"></div>
     <div class="filters"><button class="filter-button" type="button" data-search-filter="all" aria-pressed="true" data-i18n="all">all</button><button class="filter-button" type="button" data-search-filter="projects" aria-pressed="false" data-i18n="projects">projects</button><button class="filter-button" type="button" data-search-filter="publications" aria-pressed="false" data-i18n="publications">publications</button><button class="filter-button" type="button" data-search-filter="services" aria-pressed="false" data-i18n="services">services</button><button class="filter-button" type="button" data-search-filter="institutional" aria-pressed="false" data-i18n="institutional">institutional</button><button class="filter-button" type="button" data-search-filter="independent" aria-pressed="false" data-i18n="independent">independent</button><button class="filter-button" type="button" data-search-filter="buyable" aria-pressed="false" data-i18n="buyable">buyable</button><button class="filter-button" type="button" data-search-filter="coming" aria-pressed="false" data-i18n="coming">coming</button></div><div class="search-results" data-global-search-results aria-live="polite"></div>
   </div>
