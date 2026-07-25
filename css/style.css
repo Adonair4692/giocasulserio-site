@@ -307,8 +307,16 @@ user-select: none;
 .search-panel { position: fixed; inset: 0; z-index: 300; background: rgba(3,12,11,.92); backdrop-filter: blur(18px); display: none; overflow-y: auto; }
 .search-panel.is-open { display: block; }
 .search-shell { padding: 5rem 0; }
+
 .search-head { display: flex; justify-content: space-between; gap: 1rem; align-items: start; }
-.search-head h2 { font-family: var(--serif); font-size: clamp(2.2rem, 5vw, 4.5rem); margin: 0; }
+
+.search-head h2 {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3.5vw, 3.4rem);
+  line-height: 1;
+  margin: 0;
+}
+
 .icon-button { width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--white); cursor: pointer; }
 .search-box { margin: 2rem 0 1rem; }
 .search-box input { width: 100%; min-height: 64px; border: 0; border-bottom: 2px solid var(--petrol); background: transparent; color: var(--white); font-size: clamp(1.2rem, 3vw, 2rem); padding: .8rem 0; }
