@@ -344,6 +344,31 @@ user-select: none;
 
 .icon-button { width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--white); cursor: pointer; }
 
+.dialog-close {
+  width: auto;
+  height: 44px;
+  padding: 0 .9rem;
+  border-radius: 999px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .55rem;
+
+  margin-bottom: 1rem;
+
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.dialog-close-mark {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
 .search-close {
   width: auto;
   height: 46px;
