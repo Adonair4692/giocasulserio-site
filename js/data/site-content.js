@@ -180,8 +180,8 @@ window.GSS.ui = {
 
     soundOn: 'Suoni attivi',
     soundOff: 'Suoni disattivati',
-    scoringOn: 'Punteggio attivo',
-    scoringOff: 'Punteggio disattivato',
+    scoringOn: 'Punteggio Black Swans Hunter "BSH" attivo',
+    scoringOff: 'Punteggio Black Swans Hunter "BSH" disattivato',
 
     totalProjects: 'Cartucce',
     instProjects: 'Istituzionali',
@@ -295,8 +295,8 @@ window.GSS.ui = {
 
     soundOn: 'Sounds enabled',
     soundOff: 'Sounds disabled',
-    scoringOn: 'Scoring enabled',
-    scoringOff: 'Scoring disabled',
+    scoringOn: 'Black-Swans-Hunter "BSH" Scoring enabled',
+    scoringOff: 'Black-Swans-Hunter "BSH" Scoring disabled',
 
     totalProjects: 'Cartridges',
     instProjects: 'Institutional',
