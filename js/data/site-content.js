@@ -158,7 +158,7 @@ window.GSS.ui = {
     scoreLabel: 'Black Swan Hunter Score',
     finish: 'Concludi l’esplorazione',
     reset: 'Azzera percorso',
-    settings: 'Gestisci esperienza',
+    settings: 'Gestisci suono e punteggio',
 
     introTitle: 'La caccia ai Cigni Neri è aperta',
     introText: 'Esplora console, cartucce e pubblicazioni. Le interazioni significative aumentano il tuo Black Swan Hunter Score. Il percorso resta sul tuo dispositivo per sette giorni e non richiede registrazione.',
@@ -273,7 +273,7 @@ window.GSS.ui = {
     scoreLabel: 'Black Swan Hunter Score',
     finish: 'Finish exploration',
     reset: 'Reset journey',
-    settings: 'Manage experience',
+    settings: 'Manage sounds & scoring',
 
     introTitle: 'The hunt for Black Swans is open',
     introText: 'Explore consoles, cartridges and publications. Meaningful interactions increase your Black Swan Hunter Score. Your journey stays on your device for seven days and requires no registration.',
