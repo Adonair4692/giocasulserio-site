@@ -97,15 +97,21 @@
   </section>
 </div>
 <div class="dialog-backdrop" data-profile-dialog aria-hidden="true">
-  <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="profile-title">
-    <button
-  class="icon-button"
-  type="button"
-  data-dialog-close
-  aria-label="Chiudi"
+<section
+  class="dialog"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="profile-title"
 >
-  ×
-</button><h2 id="profile-title" data-i18n="profileTitle">Il tuo profilo di esplorazione</h2>
+  <button
+    class="icon-button dialog-close"
+    type="button"
+    data-dialog-close
+    data-i18n-aria="close"
+  >
+    <span data-i18n="close">Chiudi</span>
+    <span class="dialog-close-mark" aria-hidden="true">×</span>
+  </button><h2 id="profile-title" data-i18n="profileTitle">Il tuo profilo di esplorazione</h2>
     <div class="profile-score" data-score-value>0</div><h3 data-profile-name>Osservatore prudente</h3><p data-profile-text></p>
     <p><span data-score-state></span> · <span data-sound-state></span></p>
     <div class="dialog-actions"><button class="button button-primary" type="button" data-dialog-close data-i18n="resume">Riprendi l’esplorazione</button><button class="button button-secondary" type="button" data-reset-score data-i18n="reset">Azzera percorso</button></div>
