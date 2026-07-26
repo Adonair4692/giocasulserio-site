@@ -174,7 +174,7 @@ window.GSS.ui = {
     continue: 'Continua',
     resetReplay: 'Azzera e rigioca',
 
-    profileTitle: 'Il tuo profilo di esplorazione',
+    profileTitle: 'Il tuo profilo da esploratore',
     resume: 'Riprendi l’esplorazione',
     close: 'Chiudi',
 
@@ -289,7 +289,7 @@ window.GSS.ui = {
     continue: 'Continue',
     resetReplay: 'Reset and replay',
 
-    profileTitle: 'Your exploration profile',
+    profileTitle: 'Your explorer profile',
     resume: 'Resume exploration',
     close: 'Close',
 
