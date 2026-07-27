@@ -784,3 +784,36 @@ white-space: nowrap;
     padding: .85rem .9rem;
   }
 }
+
+/* =========================================================
+   FINESTRA INIZIALE — LINK COOKIE E PREFERENZE
+   ========================================================= */
+
+.dialog-privacy-note {
+  margin: 1rem 0 0;
+  text-align: center;
+  font-size: .82rem;
+  line-height: 1.4;
+}
+
+.dialog-privacy-note a {
+  color: var(--petrol-light);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .22em;
+  transition:
+    color .2s ease,
+    text-shadow .2s ease;
+}
+
+.dialog-privacy-note a:hover,
+.dialog-privacy-note a:focus-visible {
+  color: var(--white);
+  text-shadow: 0 0 14px rgba(111, 255, 198, .35);
+}
+
+.dialog-privacy-note a:focus-visible {
+  outline: 2px solid var(--petrol-light);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
