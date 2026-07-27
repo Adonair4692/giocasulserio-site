@@ -817,3 +817,56 @@ white-space: nowrap;
   outline-offset: 4px;
   border-radius: 4px;
 }
+
+/* =========================================================
+   POPUP INIZIALE — INTESTAZIONE
+   ========================================================= */
+
+.intro-dialog-header {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) 58px;
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.intro-dialog-header h2 {
+  margin: 0;
+}
+
+.intro-dialog-swan {
+  width: 34px;
+  height: 34px;
+  margin-top: .35rem;
+  object-fit: contain;
+}
+
+.intro-dialog-profile {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+
+  border: 1px solid var(--line);
+  box-shadow:
+    0 0 0 3px rgba(61, 255, 178, .06),
+    0 0 18px rgba(61, 255, 178, .16);
+}
+
+@media (max-width: 600px) {
+  .intro-dialog-header {
+    grid-template-columns: 34px minmax(0, 1fr) 46px;
+    gap: .7rem;
+  }
+
+  .intro-dialog-swan {
+    width: 28px;
+    height: 28px;
+  }
+
+  .intro-dialog-profile {
+    width: 44px;
+    height: 44px;
+  }
+}
