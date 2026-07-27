@@ -160,7 +160,7 @@ window.GSS.ui = {
     reset: 'Azzera percorso',
     settings: 'Gestisci suoni e punteggio',
 
-    introTitle: 'Personalizza l’esperienza',
+    introTitle: 'Personalizza l’esplorazione del sito',
     introText: 'Esplora console, cartucce e pubblicazioni. Le interazioni significative aumentano il tuo Black Swan Hunter Score. Il percorso resta sul tuo dispositivo per sette giorni e non richiede registrazione.',
 
     startScore: 'Attiva il BSH',
@@ -275,7 +275,7 @@ window.GSS.ui = {
     reset: 'Reset journey',
     settings: 'Manage sounds & scoring',
 
-    introTitle: 'Customize your experience',
+    introTitle: 'Customize site exploration',
     introText: 'Explore consoles, cartridges and publications. Meaningful interactions increase your Black Swan Hunter Score. Your journey stays on your device for seven days and requires no registration.',
 
     noScore: 'Explore without BSH',
