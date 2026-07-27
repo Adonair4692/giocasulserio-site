@@ -24,7 +24,61 @@ window.GSSApp = window.GSSApp || {};
   });
 
   let data = EMPTY();
-  let audio = null;
+
+  function preferenceLifetime() {
+    return (G.site.scoreLifetimeDays || 7) * 86400000;
+  }
+
+  function readPreference() {
+    try {
+      const raw = localStorage.getItem(PREF_KEY);
+
+      if (!raw) return null;
+
+      /* Migrazione delle vecchie preferenze salvate come testo semplice. */
+      if (raw === 'score' || raw === 'no-score') {
+        const migrated = {
+          mode: raw,
+          sound: false,
+          expiresAt: Date.now() + preferenceLifetime()
+        };
+
+        localStorage.setItem(
+          PREF_KEY,
+          JSON.stringify(migrated)
+        );
+
+        return migrated;
+      }
+
+      const preference = JSON.parse(raw);
+
+      if (
+        !preference ||
+        !['score', 'no-score'].includes(preference.mode) ||
+        preference.expiresAt <= Date.now()
+      ) {
+        localStorage.removeItem(PREF_KEY);
+        return null;
+      }
+
+      return preference;
+    } catch (_) {
+      localStorage.removeItem(PREF_KEY);
+      return null;
+    }
+  }
+
+  function savePreference(enabled, sound) {
+    localStorage.setItem(
+      PREF_KEY,
+      JSON.stringify({
+        mode: enabled ? 'score' : 'no-score',
+        sound: Boolean(sound),
+        expiresAt: Date.now() + preferenceLifetime()
+      })
+    );
+  }
 
   function load() {
     try {
@@ -39,6 +93,12 @@ window.GSSApp = window.GSSApp || {};
       }
     } catch (_) {
       localStorage.removeItem(KEY);
+    }
+
+    const preference = readPreference();
+
+    if (preference) {
+      data.sound = Boolean(preference.sound);
     }
 
     return data;
@@ -90,7 +150,7 @@ window.GSSApp = window.GSSApp || {};
       });
   }
 
- function tone(kind = 'select') {
+  function tone(kind = 'select') {
   if (!data.sound) return;
 
   const files = {
@@ -214,11 +274,11 @@ window.GSSApp = window.GSSApp || {};
     save();
     updateUI();
     showScoreGain(points);
-tone(
-  key === 'secret:eagle-eye'
-    ? 'swan'
-    : 'score'
-);
+    tone(
+      key === 'secret:eagle-eye'
+        ? 'swan'
+        : 'score'
+    );
 
     const live = document.querySelector(
       '[data-score-live]'
@@ -432,12 +492,7 @@ tone(
       (G.site.scoreLifetimeDays || 7) *
         86400000;
 
-    localStorage.setItem(
-      PREF_KEY,
-      enabled
-        ? 'score'
-        : 'no-score'
-    );
+    savePreference(enabled, sound);
 
     if (enabled) {
       save();
@@ -533,7 +588,7 @@ tone(
       !new URLSearchParams(
         location.search
       ).has('preview') &&
-      !localStorage.getItem(PREF_KEY)
+      !readPreference()
     ) {
       App.openDialog(intro);
     }
@@ -655,12 +710,7 @@ tone(
             updateUI();
           }
 
-          localStorage.setItem(
-            PREF_KEY,
-            enabled
-              ? 'score'
-              : 'no-score'
-          );
+          savePreference(enabled, sound);
 
           App.closeDialog(dialog);
           tone('select');
@@ -686,10 +736,7 @@ tone(
   }
 
   function initInteractionScoring() {
-     /*
-     * Suono leggero per filtri
-     * e opzioni selezionabili.
-     */
+    /* Suono leggero per filtri e opzioni selezionabili. */
     document.addEventListener(
       'click',
       event => {
