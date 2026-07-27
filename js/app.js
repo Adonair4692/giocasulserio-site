@@ -218,8 +218,8 @@ swan.addEventListener('pointerdown', event => {
 
       achievementText.textContent =
         english
-          ? 'You spotted a black swan · +5 BSS'
-          : 'Hai individuato un cigno nero · +5 BSS';
+          ? 'You spotted a black swan · +5 BSH'
+          : 'Hai individuato un cigno nero · +5 BSH';
 
     } else if (scoringEnabled) {
       achievementTitle.textContent =
