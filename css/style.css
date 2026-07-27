@@ -824,38 +824,33 @@ white-space: nowrap;
 
 .intro-dialog-header {
   display: grid;
-  grid-template-columns: 56px minmax(0, 1fr) 76px;
+  grid-template-columns: 72px minmax(0, 1fr) 94px;
   align-items: start;
-  gap: 1.15rem;
+  gap: 1.2rem;
   margin-bottom: 1.35rem;
 }
 
 .intro-dialog-header h2 {
   margin: 0;
-
   font-size: clamp(2.45rem, 3.8vw, 3.55rem);
   line-height: .98;
   letter-spacing: -.025em;
 }
 
 .intro-dialog-swan {
-  width: 48px;
-  height: 48px;
-  margin-top: .25rem;
-
+  width: 64px;
+  height: 64px;
+  margin-top: .2rem;
   object-fit: contain;
 }
 
 .intro-dialog-profile {
-  width: 70px;
-  height: 70px;
-
+  width: 86px;
+  height: 86px;
   border: 1px solid var(--line);
   border-radius: 50%;
-
   object-fit: cover;
   object-position: center top;
-
   box-shadow:
     0 0 0 3px rgba(61, 255, 178, .06),
     0 0 20px rgba(61, 255, 178, .2);
@@ -863,7 +858,7 @@ white-space: nowrap;
 
 @media (max-width: 600px) {
   .intro-dialog-header {
-    grid-template-columns: 42px minmax(0, 1fr) 56px;
+    grid-template-columns: 50px minmax(0, 1fr) 66px;
     gap: .75rem;
     margin-bottom: 1.1rem;
   }
@@ -874,13 +869,13 @@ white-space: nowrap;
   }
 
   .intro-dialog-swan {
-    width: 38px;
-    height: 38px;
+    width: 46px;
+    height: 46px;
     margin-top: .15rem;
   }
 
   .intro-dialog-profile {
-    width: 54px;
-    height: 54px;
+    width: 62px;
+    height: 62px;
   }
 }
