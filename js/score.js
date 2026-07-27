@@ -686,6 +686,32 @@ tone(
   }
 
   function initInteractionScoring() {
+     /*
+     * Suono leggero per filtri
+     * e opzioni selezionabili.
+     */
+    document.addEventListener(
+      'click',
+      event => {
+        const filterButton =
+          event.target.closest('.filter-button');
+
+        if (filterButton) {
+          tone('select');
+        }
+      }
+    );
+
+    document.addEventListener(
+      'change',
+      event => {
+        if (
+          event.target.matches('.filter-select')
+        ) {
+          tone('select');
+        }
+      }
+    );
     document.addEventListener(
       'click',
       event => {
