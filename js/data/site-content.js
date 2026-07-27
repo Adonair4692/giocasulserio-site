@@ -161,10 +161,10 @@ window.GSS.ui = {
     settings: 'Gestisci suoni e punteggio',
 
     introTitle: 'Personalizza l’esplorazione del sito',
-    introText: 'Esplora giochi, console, cartucce, pubblicazioni ed esercitazioni. Per ogni contenuto esplorato aumenti il tuo Black Swan Hunter Score. Per ricevere il pop-up “Sito platinato” dovrai catturare un Cigno Nero. Il punteggio ottenuto può restare sul tuo dispositivo per sette giorni e non richiede registrazione.',
+    introText: 'Esplora giochi, console, cartucce, pubblicazioni ed esercitazioni. Per ogni contenuto esplorato aumenti il tuo punteggio Black Swan Hunter (BSH). Per ricevere il pop-up “Sito Platinato” dovrai catturare un Cigno Nero. Il punteggio ottenuto può restare sul tuo dispositivo per sette giorni e non richiede registrazione.',
 
-    startScore: 'Attiva il BSH',
-    noScore: 'Esplora senza BSH',
+    startScore: 'Attiva il punteggio BSH',
+    noScore: 'Esplora senza punteggio BSH',
     soundOpt: 'Attiva i suoni per arricchire l’esperienza',
 
     platinumTitle: 'Hai platinato il sito',
@@ -276,10 +276,10 @@ window.GSS.ui = {
     settings: 'Manage sounds & scoring',
 
     introTitle: 'Customize site exploration',
-    introText: 'Explore games, consoles, cartridges, publications and exercises. Each item you explore increases your Black Swan Hunter Score. To unlock the “Site Platinum” pop-up, you will need to catch a Black Swan. Your score can remain on your device for seven days and no registration is required.',
+    introText: 'Explore games, consoles, cartridges, publications and exercises. Each item you explore increases your Black Swan Hunter (BSH) Score. To unlock the “Site Platinum” pop-up, you will need to catch a Black Swan. Your score can remain on your device for seven days and no registration is required.',
 
-    noScore: 'Explore without BSH',
-    noScore: 'Explore without score',
+    noScore: 'Explore without BSH score',
+    noScore: 'Explore without BSH score',
     soundOpt: 'Enable sounds to enrich the experience',
 
     platinumTitle: 'You have platinumed the site',
