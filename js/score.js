@@ -90,63 +90,55 @@ window.GSSApp = window.GSSApp || {};
       });
   }
 
-  function tone(kind = 'select') {
-    if (!data.sound) return;
+ function tone(kind = 'select') {
+  if (!data.sound) return;
 
-    try {
-      audio =
-        audio ||
-        new (
-          window.AudioContext ||
-          window.webkitAudioContext
-        )();
+  const files = {
+    select:
+      'assets/sounds/select-click.mp3',
 
-      const osc = audio.createOscillator();
-      const gain = audio.createGain();
+    score:
+      'assets/sounds/score-pop-up-gain.mp3',
 
-      const map = {
-        select: [420, 0.045],
-        open: [560, 0.055],
-        score: [700, 0.07],
-        platinum: [880, 0.22]
-      };
+    swan:
+      'assets/sounds/swan-capture-camera-shoot.mp3',
 
-      const [freq, duration] =
-        map[kind] || map.select;
+    platinum:
+      'assets/sounds/platinum-crowd-cheers.mp3'
+  };
 
-      osc.type =
-        kind === 'platinum'
-          ? 'triangle'
-          : 'sine';
+  const volumes = {
+    select: 0.35,
+    score: 0.5,
+    swan: 0.65,
+    platinum: 0.55
+  };
 
-      osc.frequency.value = freq;
+  const source = files[kind];
 
-      gain.gain.setValueAtTime(
-        0.0001,
-        audio.currentTime
-      );
+  /*
+   * Per ora "open" non produce alcun suono.
+   * Collegheremo successivamente la goccia.
+   */
+  if (!source) return;
 
-      gain.gain.exponentialRampToValueAtTime(
-        0.06,
-        audio.currentTime + 0.01
-      );
+  try {
+    const sound = new Audio(source);
 
-      gain.gain.exponentialRampToValueAtTime(
-        0.0001,
-        audio.currentTime + duration
-      );
+    sound.preload = 'auto';
+    sound.volume =
+      volumes[kind] ?? 0.5;
 
-      osc.connect(gain);
-      gain.connect(audio.destination);
-
-      osc.start();
-      osc.stop(
-        audio.currentTime + duration + 0.02
-      );
-    } catch (_) {
-      /* Audio is optional. */
-    }
+    sound.play().catch(() => {
+      /*
+       * Alcuni browser possono bloccare
+       * l’audio non avviato da un gesto.
+       */
+    });
+  } catch (_) {
+    /* L’audio è facoltativo. */
   }
+}
 
   function mark(type, id) {
     const bucket = data[type];
