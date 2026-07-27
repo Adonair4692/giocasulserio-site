@@ -214,7 +214,11 @@ window.GSSApp = window.GSSApp || {};
     save();
     updateUI();
     showScoreGain(points);
-   tone('score');
+tone(
+  key === 'secret:eagle-eye'
+    ? 'swan'
+    : 'score'
+);
 
     const live = document.querySelector(
       '[data-score-live]'
