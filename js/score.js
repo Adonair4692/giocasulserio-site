@@ -214,11 +214,7 @@ window.GSSApp = window.GSSApp || {};
     save();
     updateUI();
     showScoreGain(points);
-    tone(
-      points >= 15
-        ? 'score'
-        : 'select'
-    );
+   tone('score');
 
     const live = document.querySelector(
       '[data-score-live]'
