@@ -161,7 +161,7 @@ window.GSS.ui = {
     settings: 'Gestisci suoni e punteggio',
 
     introTitle: 'Personalizza l’esplorazione del sito',
-    introText: 'Esplora console, cartucce e pubblicazioni. Le interazioni significative aumentano il tuo Black Swan Hunter Score. Il percorso resta sul tuo dispositivo per sette giorni e non richiede registrazione.',
+    introText: 'Esplora giochi, console, cartucce, pubblicazioni ed esercitazioni. Per ogni contenuto esplorato aumenti il tuo Black Swan Hunter Score. Per ricevere il pop-up “Sito platinato” dovrai catturare un Cigno Nero. Il punteggio ottenuto può restare sul tuo dispositivo per sette giorni e non richiede registrazione.',
 
     startScore: 'Attiva il BSH',
     noScore: 'Esplora senza BSH',
@@ -276,7 +276,7 @@ window.GSS.ui = {
     settings: 'Manage sounds & scoring',
 
     introTitle: 'Customize site exploration',
-    introText: 'Explore consoles, cartridges and publications. Meaningful interactions increase your Black Swan Hunter Score. Your journey stays on your device for seven days and requires no registration.',
+    introText: 'Explore games, consoles, cartridges, publications and exercises. Each item you explore increases your Black Swan Hunter Score. To unlock the “Site Platinum” pop-up, you will need to catch a Black Swan. Your score can remain on your device for seven days and no registration is required.',
 
     noScore: 'Explore without BSH',
     noScore: 'Explore without score',
