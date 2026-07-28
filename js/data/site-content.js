@@ -32,79 +32,71 @@ window.GSS.site = {
 
 window.GSS.consoles = [
   {
-    id: 'ttx',
-    code: 'TTX',
-
-    label: {
-      it: 'Esercitazioni tabletop',
-      en: 'Tabletop Exercises'
-    },
-
+    id: 'planning-analysis',
+    code: 'CON-01',
+    label: {it: 'Planning & Analysis', en: 'Planning & Analysis'},
     description: {
-      it: 'Mappe, filiere logistiche, gestione delle risorse e scelte decisive.',
-      en: 'Maps, supply chains, resource management and critical decisions.'
+      it: 'Giochi e simulazioni per mettere alla prova piani, osservare processi decisionali e individuare vulnerabilità prima che diventino incidenti.',
+      en: 'Games and simulations for testing plans, observing decision processes and identifying vulnerabilities before they become incidents.'
     }
   },
-
   {
-    id: 'Wargame',
-    code: 'WG',
-
-    label: {
-      it: 'Wargame addestrativi',
-      en: 'Educational Wargames'
-    },
-
+    id: 'educational-wargames',
+    code: 'CON-02',
+    label: {it: 'Educational Wargames', en: 'Educational Wargames'},
     description: {
-      it: 'Influenza, strategia, scenari conflittuali e apprendimento riflessivo.',
-      en: 'Influence, strategy, adversarial scenarios and reflection-in-action.'
+      it: 'Wargame educativi per esplorare influenza, strategia e apprendimento tattico attraverso decisioni e conseguenze.',
+      en: 'Educational wargames for exploring influence, strategy and tactical learning through decisions and consequences.'
     }
   },
-
   {
-    id: 'boardgame',
-    code: 'BG',
-
-    label: {
-      it: 'Board game',
-      en: 'Board Games'
-    },
-
+    id: 'emergency-response-games',
+    code: 'CON-03',
+    label: {it: 'Emergency Response Games', en: 'Emergency Response Games'},
     description: {
-      it: 'Plance, carte, dadi, tempo limitato e dinamiche coopetitive.',
-      en: 'Boards, cards, dice, limited time and coopetitive dynamics.'
+      it: 'Giochi dedicati a soccorso, recupero, analisi dei disastri e comunicazione nelle emergenze.',
+      en: 'Games focused on relief, recovery, disaster analysis and communication during emergencies.'
     }
   },
-
   {
-    id: 'ssg',
-    code: 'SST',
-
-    label: {
-      it: 'Formazione soft skills',
-      en: 'Soft Skills Training'
-    },
-
+    id: 'soft-skills-training',
+    code: 'CON-04',
+    label: {it: 'Soft Skills Training', en: 'Soft Skills Training'},
     description: {
-      it: 'Leadership, comunicazione efficace e dinamiche di gruppo.',
-      en: 'Leadership, effective communication and group dynamics.'
+      it: 'Esperienze formative per leadership, negoziazione e decisione in situazioni complesse.',
+      en: 'Training experiences for leadership, negotiation and decision-making in complex situations.'
     }
   },
-
   {
-    id: 'indie',
-    code: 'IND',
-
-    label: {
-      it: 'Giochi indie',
-      en: 'Indie Games'
-    },
-
+    id: 'experimental-games',
+    code: 'CON-05',
+    label: {it: 'Experimental Games', en: 'Experimental Games'},
     description: {
-      it: 'Esperienze immersive, scelte narrative e prototipi indipendenti.',
-      en: 'Immersive experiences, narrative choices and independent prototypes.'
+      it: 'Prototipi, serious game sperimentali e giochi narrativi usati per esplorare nuovi formati e linguaggi.',
+      en: 'Prototypes, experimental serious games and narrative games used to explore new formats and languages.'
     }
   }
+];
+
+
+window.GSS.keywords = [
+  {id: 'defence', label: {it: 'Difesa', en: 'Defence'}},
+  {id: 'civil-protection', label: {it: 'Protezione civile', en: 'Civil protection'}},
+  {id: 'climate', label: {it: 'Clima', en: 'Climate'}},
+  {id: 'space', label: {it: 'Spazio', en: 'Space'}},
+  {id: 'artificial-intelligence', label: {it: 'Intelligenza artificiale', en: 'Artificial intelligence'}},
+  {id: 'privacy', label: {it: 'Privacy', en: 'Privacy'}},
+  {id: 'leadership', label: {it: 'Leadership', en: 'Leadership'}},
+  {id: 'diplomacy', label: {it: 'Diplomazia', en: 'Diplomacy'}},
+  {id: 'disinformation', label: {it: 'Disinformazione', en: 'Disinformation'}},
+  {id: 'resilience', label: {it: 'Resilienza', en: 'Resilience'}},
+  {id: 'evaluation', label: {it: 'Valutazione', en: 'Evaluation'}},
+  {id: 'training', label: {it: 'Formazione', en: 'Training'}},
+  {id: 'strategy', label: {it: 'Strategia', en: 'Strategy'}},
+  {id: 'logistics', label: {it: 'Logistica', en: 'Logistics'}},
+  {id: 'cooperation', label: {it: 'Cooperazione', en: 'Cooperation'}},
+  {id: 'flood-risk', label: {it: 'Rischio alluvionale', en: 'Flood risk'}},
+  {id: 'mediterranean', label: {it: 'Mediterraneo', en: 'Mediterranean'}}
 ];
 
 
@@ -127,7 +119,9 @@ window.GSS.ui = {
     independent: 'Produzioni indipendenti',
     publications: 'Ricerca e divulgazione scientifica',
 
-    projectsIntro: 'Esplora la libreria per console, ambito e stato.',
+    projectsIntro: 'Ogni console raccoglie dispositivi accomunati dallo stesso perimetro di gioco.',
+    filterConsole: 'Console',
+    allConsoles: 'Tutte le console',
     servicesClaim: 'Progettare. Testare. Valutare.',
 
     collaborations: 'Collaborazioni e network',
@@ -180,8 +174,8 @@ window.GSS.ui = {
 
     soundOn: 'Suoni attivi',
     soundOff: 'Suoni disattivati',
-    scoringOn: 'Punteggio Black Swans Hunter "BSH" attivo',
-    scoringOff: 'Punteggio Black Swans Hunter "BSH" disattivato',
+    scoringOn: 'Punteggio Black Swan Hunter "BSH" attivo',
+    scoringOff: 'Punteggio Black Swan Hunter "BSH" disattivato',
 
     totalProjects: 'Cartucce',
     instProjects: 'Istituzionali',
@@ -242,7 +236,9 @@ window.GSS.ui = {
     independent: 'Independent productions',
     publications: 'Research & science communication',
 
-    projectsIntro: 'Explore the library by console, context and status.',
+    projectsIntro: 'Each console groups game devices sharing the same playable scope.',
+    filterConsole: 'Console',
+    allConsoles: 'All consoles',
     servicesClaim: 'Design. Test. Evaluate.',
 
     collaborations: 'Collaborations & networks',
@@ -278,7 +274,7 @@ window.GSS.ui = {
     introTitle: 'Customize site exploration',
     introText: 'Explore games, consoles, cartridges, publications and exercises. Each item you explore increases your Black Swan Hunter (BSH) Score. To unlock the “Site Platinum” pop-up, you will need to catch a Black Swan. Your score can remain on your device for seven days and no registration is required.',
 
-    noScore: 'Explore without BSH score',
+    startScore: 'Enable BSH score',
     noScore: 'Explore without BSH score',
     soundOpt: 'Enable sounds to enrich the experience',
 
@@ -295,8 +291,8 @@ window.GSS.ui = {
 
     soundOn: 'Sounds enabled',
     soundOff: 'Sounds disabled',
-    scoringOn: 'Black-Swans-Hunter "BSH" Scoring enabled',
-    scoringOff: 'Black-Swans-Hunter "BSH" Scoring disabled',
+    scoringOn: 'Black Swan Hunter "BSH" scoring enabled',
+    scoringOff: 'Black Swan Hunter "BSH" scoring disabled',
 
     totalProjects: 'Cartridges',
     instProjects: 'Institutional',
