@@ -16,11 +16,17 @@ window.GSSApp = window.GSSApp || {};
   App.normalize = function (value) {
     return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
   };
-  App.getLanguage = function () {
-    const saved = localStorage.getItem(LANG_KEY);
-    if (saved === 'it' || saved === 'en') return saved;
-    return (navigator.language || '').toLowerCase().startsWith('en') ? 'en' : 'it';
-  };
+
+App.getLanguage = function () {
+  const saved = localStorage.getItem(LANG_KEY);
+  if (saved === 'it' || saved === 'en') return saved;
+
+  const browserLanguage =
+    (navigator.languages?.[0] || navigator.language || '').toLowerCase();
+
+  return browserLanguage.startsWith('it') ? 'it' : 'en';
+};
+  
   App.setLanguage = function (lang, persist = true) {
     state.lang = lang === 'en' ? 'en' : 'it';
     document.documentElement.lang = state.lang;
