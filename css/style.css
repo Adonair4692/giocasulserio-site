@@ -245,7 +245,7 @@ user-select: none;
 }
 
 .console-card {
-  min-height: 410px;
+  min-height: 350px;
   position: relative;
   isolation: isolate;
   overflow: hidden;
