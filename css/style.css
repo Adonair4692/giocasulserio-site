@@ -914,3 +914,9 @@ body:not([data-page="home"]) .section {
     padding-bottom: 3rem;
   }
 }
+
+/* LIBRERIA — FILTRO PER CONSOLE */
+.project-filter-stack { display: grid; gap: 1.35rem; margin-bottom: 2.2rem; }
+.filter-group { border: 1px solid rgba(73,183,170,.2); border-radius: 16px; padding: 1rem 1rem .25rem; background: rgba(255,255,255,.025); }
+.filter-label { margin: 0 0 .8rem; color: var(--petrol-light); font-size: .76rem; line-height: 1.2; letter-spacing: .14em; text-transform: uppercase; }
+.filter-group .filters { margin-bottom: .8rem; }
