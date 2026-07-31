@@ -246,7 +246,7 @@ attribution: {
     'training'
   ],
 
-  image: 'assets/projects/recovery-protocol.svg',
+  image: 'assets/projects/how-i-met-ai-cover.png',
 
   actions: [
     {
