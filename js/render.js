@@ -23,6 +23,13 @@ function projectConsoleItems(project) {
     .filter(Boolean);
 }
 
+  function projectConsoleLabel(project) {
+  return projectConsoleItems(project)
+    .map(consoleItem => App.local(consoleItem.label))
+    .filter(Boolean)
+    .join(' · ');
+}
+
   function projectActions(project, includeOpen = true) {
     const pieces = [];
     if (includeOpen) {
@@ -209,10 +216,14 @@ function projectsMatchingConsole() {
       return;
     }
 
-    const consoleItem = App.consoleById(project.console);
+    const consoleLabel = projectConsoleLabel(project);
 
     document.title = `${App.local(project.title)} | ${G.site.brand}`;
-    host.innerHTML = `<section class="page-hero"><div class="container"><span class="eyebrow">${App.escape(App.local(consoleItem?.label))}</span><h1>${App.escape(App.local(project.title))}</h1><p>${App.escape(App.local(project.summary))}</p></div></section>
+    host.innerHTML = `<section class="page-hero"><div class="container">
+    
+   <span class="eyebrow">${App.escape(consoleLabel)}</span>
+    
+    <h1>${App.escape(App.local(project.title))}</h1><p>${App.escape(App.local(project.summary))}</p></div></section>
       <section class="section section-dark"><div class="container detail-layout">
         <div class="prose"><div class="detail-visual"><img src="${App.escape(project.image)}" alt="" width="960" height="540"></div>
           <h2>${App.escape(App.t('details'))}</h2><p>${App.escape(App.local(project.description))}</p>
@@ -221,7 +232,9 @@ function projectsMatchingConsole() {
           ${project.linkedPublications?.length ? `<h2>${App.escape(App.t('linkedPublications'))}</h2>${project.linkedPublications.map(id => { const pub = App.publicationById(id); return pub ? `<p><a href="ricerca-pubblicazioni.html#${App.escape(pub.id)}">${App.escape(App.local(pub.title))}</a></p>` : ''; }).join('')}` : ''}
         </div>
         <aside class="detail-sidebar" aria-label="${App.escape(App.t('details'))}"><dl>
-          <dt>${App.escape(App.t('console'))}</dt><dd>${App.escape(App.local(consoleItem?.label))}</dd>
+        
+          <dt>${App.escape(App.t('console'))}</dt><dd>${App.escape(consoleLabel)}</dd>
+          
           <dt>${App.escape(App.t('ownership'))}</dt><dd>${App.escape(App.ownershipLabel(project.ownership))}</dd>
           <dt>${App.escape(App.t('status'))}</dt><dd>${App.escape(App.statusLabel(project.status))}</dd>
           ${App.local(project.institution) ? `<dt>${App.escape(App.t('institution'))}</dt><dd>${App.escape(App.local(project.institution))}</dd>` : ''}
