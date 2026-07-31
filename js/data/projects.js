@@ -147,35 +147,35 @@ window.GSS.projects = [
   sections: ['projects'],
 
   title: {
-    it: 'Privacy & AI / Recovery Protocol',
-    en: 'Privacy & AI / Recovery Protocol'
-  },
+  it: 'How I Met AI',
+  en: 'How I Met AI'
+},
 
-  type: {
-    it: 'Gioco narrativo sperimentale digitale',
-    en: 'Experimental digital narrative game'
-  },
+type: {
+  it: 'Serious game narrativo digitale su intelligenza artificiale e privacy',
+  en: 'Digital narrative serious game about artificial intelligence and privacy'
+},
 
-  summary: {
-    it: 'Un gioco narrativo su privacy, flussi di dati e scelte nell’uso dell’intelligenza artificiale in azienda.',
-    en: 'A narrative game about privacy, data flows and choices when using artificial intelligence at work.'
-  },
+summary: {
+  it: 'Un dipendente utilizza un sistema di intelligenza artificiale per elaborare documenti aziendali riservati. La scorciatoia funziona, finché informazioni sensibili iniziano a transitare attraverso connettori e servizi esterni sconosciuti.',
+  en: 'An employee uses an artificial intelligence system to process confidential company documents. The shortcut works until sensitive information begins moving through unknown connectors and external services.'
+},
 
-  description: {
-    it: 'Il visitatore attraversa una storia interattiva nella quale strumenti, fornitori, reti e revisori umani diventano parte di un sistema da comprendere e ricostruire.',
-    en: 'The player moves through an interactive story in which tools, providers, networks and human reviewers become a system to understand and rebuild.'
-  },
+description: {
+  it: 'Il giocatore deve recuperare i dati esposti, comprendere chi può accedervi e isolare le connessioni non sicure. L’esperienza combina narrativa interattiva, punti decisionali e tre brevi minigiochi dedicati alla visibilità dei dati, ai connettori IA e alla preparazione di input più sicuri attraverso il protocollo CamoData. Le scelte conducono a esiti differenti e delineano un approccio più coraggioso o più prudente, senza presentare uno dei due profili come universalmente superiore.',
+  en: 'The player must recover exposed data, understand who can access it and isolate unsafe connections. The experience combines interactive fiction, decision points and three short minigames focused on data visibility, AI connectors and the preparation of safer inputs through the CamoData protocol. Decisions lead to different outcomes and reveal a more courageous or prudent approach, without presenting either profile as universally superior.'
+},
 
-  purpose: {
-    it: 'Consapevolezza su privacy, AI e responsabilità nell’uso quotidiano.',
-    en: 'Awareness of privacy, AI and responsibility in everyday use.'
-  },
+purpose: {
+  it: 'Allenare la capacità di riconoscere la visibilità dei dati, individuare connettori IA rischiosi e distinguere informazioni personali, sensibili e confidenziali. Il gioco mostra come preservare il contesto utile senza esporre dati non necessari. I Mission Report iniziale e finale, facoltativi e collegati tramite nickname anonimo, permettono inoltre di confrontare consapevolezza e orientamenti prima e dopo l’esperienza.',
+  en: 'Develop the ability to recognise data visibility, identify risky AI connectors and distinguish personal, sensitive and confidential information. The game shows how to preserve useful context without unnecessarily exposing data. Optional Initial and Final Mission Reports, connected through an anonymous nickname, also support comparison of awareness and orientations before and after the experience.'
+},
 
-  attribution: {
-    it: 'Produzione indipendente di Adriano Pantaleo.',
-    en: 'Independent production by Adriano Pantaleo.'
-  },
-
+attribution: {
+  it: 'Ideazione e produzione indipendente di Adriano Pantaleo. Gioco HTML5 pubblicato su itch.io. Codice distribuito con licenza MIT e asset con licenza Creative Commons Attribution 4.0. Il progetto dichiara assistenza dell’intelligenza artificiale per codice e grafica.',
+  en: 'Designed and independently produced by Adriano Pantaleo. HTML5 game published on itch.io. Code released under the MIT License and assets under Creative Commons Attribution 4.0. The project discloses AI assistance for code and graphics.'
+},
+  
   institution: {
     it: '',
     en: ''
