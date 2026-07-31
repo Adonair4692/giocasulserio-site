@@ -5,7 +5,12 @@ window.GSSApp = window.GSSApp || {};
   let projectFilter = {
     console: 'all'
   };
-
+function projectConsoleIds(project) {
+  return [
+    project.console,
+    ...(project.additionalConsoles || [])
+  ].filter(Boolean);
+}
 
 
   function projectActions(project, includeOpen = true) {
@@ -110,12 +115,15 @@ window.GSSApp = window.GSSApp || {};
     if ((G.consoles || []).some(item => item.id === consoleId)) projectFilter.console = consoleId;
   }
 
-  function projectsMatchingConsole() {
-    return (G.projects || []).filter(project =>
-      project.visible &&
-      (projectFilter.console === 'all' || project.console === projectFilter.console)
-    );
-  }
+function projectsMatchingConsole() {
+  return (G.projects || []).filter(project =>
+    project.visible &&
+    (
+      projectFilter.console === 'all' ||
+      projectConsoleIds(project).includes(projectFilter.console)
+    )
+  );
+}
 
   function filterButtons(items, dataAttribute, currentValue) {
     return items.map(([id, label]) => `<button class="filter-button" type="button" ${dataAttribute}="${App.escape(id)}" aria-pressed="${String(currentValue === id)}">${App.escape(label)}</button>`).join('');
