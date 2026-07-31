@@ -111,13 +111,27 @@ window.GSSApp = window.GSSApp || {};
   }
 
   function updateUI() {
-    document
-      .querySelectorAll('[data-score-value]')
-      .forEach(el => {
-        el.textContent = String(
-          data.enabled ? data.score : 0
-        );
-      });
+ const currentScore =
+  data.enabled ? data.score : 0;
+
+const platinumScore =
+  G.site.platinumScore || 130;
+
+document
+  .querySelectorAll('[data-score-value]')
+  .forEach(el => {
+    const showThreshold =
+      el.closest('.footer-score') ||
+      el.classList.contains('profile-score');
+
+    if (showThreshold) {
+      el.innerHTML =
+        `<span class="score-current">${currentScore}</span>` +
+        `<span class="score-threshold">/ ${platinumScore}</span>`;
+    } else {
+      el.textContent = String(currentScore);
+    }
+  });
 
     document
       .querySelectorAll('[data-score-state]')
