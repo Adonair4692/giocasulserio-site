@@ -210,8 +210,8 @@ window.GSS.projects = [
 },
 
 type: {
-  it: 'Serious game narrativo digitale su intelligenza artificiale e privacy',
-  en: 'Digital narrative serious game about artificial intelligence and privacy'
+  it: 'Serious game narrativo digitale sulla gestione della privacy utilizzando Intelligenze Artificiali',
+  en: 'Digital narrative serious game about privacy management for using Artificial Intelligences'
 },
 
 summary: {
@@ -220,18 +220,18 @@ summary: {
 },
 
 description: {
-  it: 'Il giocatore deve recuperare i dati esposti, comprendere chi può accedervi e isolare le connessioni non sicure. L’esperienza combina narrativa interattiva, punti decisionali e tre brevi minigiochi dedicati alla visibilità dei dati, ai connettori IA e alla preparazione di input più sicuri attraverso il protocollo CamoData. Le scelte conducono a esiti differenti e delineano un approccio più coraggioso o più prudente, senza presentare uno dei due profili come universalmente superiore.',
-  en: 'The player must recover exposed data, understand who can access it and isolate unsafe connections. The experience combines interactive fiction, decision points and three short minigames focused on data visibility, AI connectors and the preparation of safer inputs through the CamoData protocol. Decisions lead to different outcomes and reveal a more courageous or prudent approach, without presenting either profile as universally superior.'
+  it: 'Il giocatore deve recuperare i dati esposti, comprendere chi può accedervi e isolare le connessioni non sicure. L’esperienza combina narrativa interattiva, punti decisionali e tre brevi minigiochi dedicati alla visibilità dei dati, ai connettori IA e alla preparazione di input più sicuri attraverso il protocollo CamoData.',
+  en: 'The player must recover exposed data, understand who can access it and isolate unsafe connections. The experience combines interactive fiction, decision points and three short minigames focused on data visibility, AI connectors and the preparation of safer inputs through the CamoData protocol.'
 },
 
 purpose: {
-  it: 'Allenare la capacità di riconoscere la visibilità dei dati, individuare connettori IA rischiosi e distinguere informazioni personali, sensibili e confidenziali. Il gioco mostra come preservare il contesto utile senza esporre dati non necessari. I Mission Report iniziale e finale, facoltativi e collegati tramite nickname anonimo, permettono inoltre di confrontare consapevolezza e orientamenti prima e dopo l’esperienza.',
-  en: 'Develop the ability to recognise data visibility, identify risky AI connectors and distinguish personal, sensitive and confidential information. The game shows how to preserve useful context without unnecessarily exposing data. Optional Initial and Final Mission Reports, connected through an anonymous nickname, also support comparison of awareness and orientations before and after the experience.'
+  it: 'Allenare la capacità di riconoscere la visibilità dei dati, conoscere il problema dei connettori IA e distinguere i diversi valori dei diversi dati sensibili. Il gioco mostra come preservare il contesto utile senza esporre dati non necessari. I Mission Report iniziale e finale, facoltativi e collegati tramite nickname anonimo, permettono inoltre di confrontare consapevolezza e orientamenti prima e dopo l’esperienza.',
+  en: 'Develop the ability to recognise the value of sensitive data. The game shows how to preserve useful context without unnecessarily exposing data. Optional Initial and Final Mission Reports, connected through an anonymous nickname, also support comparison of awareness and orientations before and after the experience.'
 },
 
 attribution: {
-  it: 'Ideazione e produzione indipendente di Adriano Pantaleo. Gioco HTML5 pubblicato su itch.io. Codice distribuito con licenza MIT e asset con licenza Creative Commons Attribution 4.0. Il progetto dichiara assistenza dell’intelligenza artificiale per codice e grafica.',
-  en: 'Designed and independently produced by Adriano Pantaleo. HTML5 game published on itch.io. Code released under the MIT License and assets under Creative Commons Attribution 4.0. The project discloses AI assistance for code and graphics.'
+  it: 'Ideazione e produzione indipendente di Adriano Pantaleo. Gioco HTML5 pubblicato su itch.io. Codice distribuito con licenza MIT e asset con licenza Creative Commons Attribution 4.0.',
+  en: 'Designed and independently produced by Adriano Pantaleo. HTML5 game published on itch.io. Code released under the MIT License and assets under Creative Commons Attribution 4.0.'
 },
   
   institution: {
