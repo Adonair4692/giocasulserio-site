@@ -11,7 +11,11 @@ function projectConsoleIds(project) {
     ...(project.additionalConsoles || [])
   ].filter(Boolean);
 }
-
+function projectConsoleItems(project) {
+  return projectConsoleIds(project)
+    .map(id => App.consoleById(id))
+    .filter(Boolean);
+}
 
   function projectActions(project, includeOpen = true) {
     const pieces = [];
@@ -28,12 +32,20 @@ function projectConsoleIds(project) {
   }
 
   function projectCard(project) {
-    const consoleItem = App.consoleById(project.console);
+    const consoleTags = projectConsoleItems(project)
+  .map(consoleItem => `
+    <span class="tag">
+      ${App.escape(App.local(consoleItem.label))}
+    </span>
+  `)
+  .join('');
     return `<article class="project-card reveal" data-project-card data-project-id="${App.escape(project.id)}">
       <div class="card-visual"><img src="${App.escape(project.image)}" alt="" loading="lazy" width="960" height="540"></div>
       <div class="card-body">
         <div class="card-meta">
-          <span class="tag">${App.escape(App.local(consoleItem?.label) || project.console)}</span>
+        
+        ${consoleTags}
+          
           <span class="tag ${project.status === 'coming-soon' ? 'tag-amber' : ''}">${App.escape(App.statusLabel(project.status))}</span>
         </div>
         <h3>${App.escape(App.local(project.title))}</h3>
