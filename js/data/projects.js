@@ -142,13 +142,13 @@ consoles: [
     en: ''
   },
 
-  keywords: [
-    'history',
-    'military tactics',
-    'leadership',
-    'decision-making',
-    'infantry training'
-  ],
+keywords: [
+  'defence',
+  'strategy',
+  'leadership',
+  'evaluation',
+  'training'
+],
 
 image: "assets/projects/duffers-drift-cover.png",
 
