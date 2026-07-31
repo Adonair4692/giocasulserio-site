@@ -504,7 +504,28 @@ user-select: none;
 .footer-links a, .footer-links button { color: var(--muted); text-decoration: none; background: transparent; border: 0; padding: .2rem 0; text-align: left; cursor: pointer; }
 .footer-links a:hover, .footer-links button:hover { color: var(--white); }
 .footer-score { border: 1px solid var(--line); border-radius: 16px; padding: 1rem; }
+
 .footer-score strong { font-family: var(--serif); font-size: 2.3rem; display: block; color: var(--petrol-light); }
+
+.profile-score {
+  display: flex;
+  align-items: baseline;
+  gap: .42rem;
+}
+
+.score-current {
+  color: var(--petrol-light);
+}
+
+.score-threshold {
+  font-family: var(--sans);
+  font-size: .42em;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: .02em;
+  white-space: nowrap;
+}
+
 .footer-bottom { display: flex; justify-content: space-between; gap: 1rem; border-top: 1px solid rgba(73,183,170,.14); margin-top: 3rem; padding-top: 1.4rem; color: #82938f; font-size: .78rem; }
 
 /* REVEAL */
