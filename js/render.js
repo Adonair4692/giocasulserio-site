@@ -5,12 +5,18 @@ window.GSSApp = window.GSSApp || {};
   let projectFilter = {
     console: 'all'
   };
+  
 function projectConsoleIds(project) {
-  return [
-    project.console,
-    ...(project.additionalConsoles || [])
-  ].filter(Boolean);
+  const ids = Array.isArray(project.consoles)
+    ? project.consoles
+    : [
+        project.console,
+        ...(project.additionalConsoles || [])
+      ];
+
+  return [...new Set(ids.filter(Boolean))];
 }
+  
 function projectConsoleItems(project) {
   return projectConsoleIds(project)
     .map(id => App.consoleById(id))
@@ -104,7 +110,12 @@ function projectConsoleItems(project) {
       [visible.filter(project => project.ownership === 'institutional').length, App.t('instProjects')],
       [visible.filter(project => project.ownership === 'independent').length, App.t('indieProjects')],
       [(G.publications || []).filter(pub => pub.visible).length, App.t('totalPubs')],
-      [new Set(visible.map(project => project.console)).size, App.t('consolesCount')]
+      [
+  new Set(
+    visible.flatMap(project => projectConsoleIds(project))
+  ).size,
+  App.t('consolesCount')
+]
     ];
     target.innerHTML = stats.map(([value, label]) => `<div class="stat reveal"><strong>${App.escape(value)}</strong><span>${App.escape(label)}</span></div>`).join('');
   }
