@@ -136,15 +136,72 @@ window.GSS.projects = [
 
 // INIZIO PROGETTO: recovery-protocol
 {
-  id: 'recovery-protocol', slug: 'privacy-ai-recovery-protocol', visible: true, featured: true,
-  ownership: 'independent', console: 'experimental-games', status: 'coming-soon', sections: ['projects'],
-  title: {it: 'Privacy & AI / Recovery Protocol', en: 'Privacy & AI / Recovery Protocol'},
-  type: {it: 'Gioco narrativo sperimentale digitale', en: 'Experimental digital narrative game'},
-  summary: {it: 'Un gioco narrativo su privacy, flussi di dati e scelte nell’uso dell’intelligenza artificiale in azienda.', en: 'A narrative game about privacy, data flows and choices when using artificial intelligence at work.'},
-  description: {it: 'Il visitatore attraversa una storia interattiva nella quale strumenti, fornitori, reti e revisori umani diventano parte di un sistema da comprendere e ricostruire.', en: 'The player moves through an interactive story in which tools, providers, networks and human reviewers become a system to understand and rebuild.'},
-  purpose: {it: 'Consapevolezza su privacy, AI e responsabilità nell’uso quotidiano.', en: 'Awareness of privacy, AI and responsibility in everyday use.'},
-  attribution: {it: 'Produzione indipendente di Adriano Pantaleo.', en: 'Independent production by Adriano Pantaleo.'}, institution: {it: '', en: ''},
-  keywords: ['artificial-intelligence', 'privacy', 'evaluation', 'training'], image: 'assets/projects/recovery-protocol.svg', actions: [], linkedPublications: []
+  id: 'recovery-protocol',
+  slug: 'privacy-ai-recovery-protocol',
+  visible: true,
+  featured: true,
+
+  ownership: 'independent',
+  console: 'experimental-games',
+  status: 'play',
+  sections: ['projects'],
+
+  title: {
+    it: 'Privacy & AI / Recovery Protocol',
+    en: 'Privacy & AI / Recovery Protocol'
+  },
+
+  type: {
+    it: 'Gioco narrativo sperimentale digitale',
+    en: 'Experimental digital narrative game'
+  },
+
+  summary: {
+    it: 'Un gioco narrativo su privacy, flussi di dati e scelte nell’uso dell’intelligenza artificiale in azienda.',
+    en: 'A narrative game about privacy, data flows and choices when using artificial intelligence at work.'
+  },
+
+  description: {
+    it: 'Il visitatore attraversa una storia interattiva nella quale strumenti, fornitori, reti e revisori umani diventano parte di un sistema da comprendere e ricostruire.',
+    en: 'The player moves through an interactive story in which tools, providers, networks and human reviewers become a system to understand and rebuild.'
+  },
+
+  purpose: {
+    it: 'Consapevolezza su privacy, AI e responsabilità nell’uso quotidiano.',
+    en: 'Awareness of privacy, AI and responsibility in everyday use.'
+  },
+
+  attribution: {
+    it: 'Produzione indipendente di Adriano Pantaleo.',
+    en: 'Independent production by Adriano Pantaleo.'
+  },
+
+  institution: {
+    it: '',
+    en: ''
+  },
+
+  keywords: [
+    'artificial-intelligence',
+    'privacy',
+    'evaluation',
+    'training'
+  ],
+
+  image: 'assets/projects/recovery-protocol.svg',
+
+  actions: [
+    {
+      type: 'play',
+      label: {
+        it: 'Gioca su itch.io',
+        en: 'Play on itch.io'
+      },
+      url: 'https://adonair.itch.io/how-i-met-ai'
+    }
+  ],
+
+  linkedPublications: []
 }
 // FINE PROGETTO: recovery-protocol
 ];
