@@ -8,13 +8,38 @@ window.GSSApp = window.GSSApp || {};
     return (G.keywords || []).find(item => item.id === id);
   }
 
+  const ids = Array.isArray(item.consoles)
+    ? item.consoles
+    : [
+        item.console,
+        ...(item.additionalConsoles || [])
+      ];
+
+  return [...new Set(ids.filter(Boolean))];
+}
+
+function projectConsoleLabel(item) {
+  return projectConsoleIds(item)
+    .map(id => App.consoleById(id))
+    .filter(Boolean)
+    .map(consoleItem => App.local(consoleItem.label))
+    .join(' · ');
+}
+  
   function searchBlob(item, type) {
     const keywordLabels = (item.keywords || []).flatMap(id => {
       const keyword = keywordById(id);
       return keyword ? [id, keyword.label?.it, keyword.label?.en] : [id];
     });
     const parts = [
-      type, item.id, item.slug, item.status, item.ownership, item.console,
+      
+      type,
+item.id,
+item.slug,
+item.status,
+item.ownership,
+...projectConsoleIds(item),
+      
       item.title?.it, item.title?.en, item.summary?.it, item.summary?.en,
       item.description?.it, item.description?.en, item.abstract?.it,
       item.abstract?.en, item.subtitle?.it, item.subtitle?.en, item.type?.it,
@@ -52,7 +77,14 @@ window.GSSApp = window.GSSApp || {};
 
   function labels(entry) {
     if (entry.kind === 'project') {
-      const meta = [App.local(App.consoleById(entry.item.console)?.label), App.ownershipLabel(entry.item.ownership)].filter(Boolean).join(' · ');
+      
+     const meta = [
+  projectConsoleLabel(entry.item),
+  App.ownershipLabel(entry.item.ownership)
+]
+  .filter(Boolean)
+  .join(' · ');
+      
       return {meta, text: App.local(entry.item.summary), url: App.projectUrl(entry.item)};
     }
     if (entry.kind === 'publication') return {meta: App.t('publications'), text: App.local(entry.item.abstract), url: `ricerca-pubblicazioni.html#${entry.item.id}`};
