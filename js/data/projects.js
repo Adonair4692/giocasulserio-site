@@ -150,7 +150,8 @@ consoles: [
     'training'
   ],
 
-  image: 'assets/projects/duffers-drift.svg',
+image: "assets/projects/duffers-drift-cover.png",
+
 
   actions: [
     {
