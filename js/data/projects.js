@@ -123,18 +123,18 @@ consoles: [
   },
 
   description: {
-    it: 'Il giocatore assume il comando di un piccolo distaccamento incaricato di difendere un guado. Deve decidere come osservare il terreno, dove schierare gli uomini, come proteggere il campo, quando aprire il fuoco e come reagire alle informazioni disponibili. Le situazioni di comando vengono riproposte in forma iterativa: ricognizione insufficiente, posizioni esposte, occultamento debole e fuoco prematuro producono conseguenze che alimentano il tentativo successivo.',
-    en: 'The player takes command of a small detachment assigned to defend a drift. Decisions concern how to observe the terrain, where to position the men, how to protect the camp, when to open fire and how to respond to the available information. Command situations are repeated iteratively: poor reconnaissance, exposed positions, weak concealment and premature fire produce consequences that inform the next attempt.'
+    it: 'Il giocatore assume il comando di un plotone di fanteria per difendere un guado. Deve decidere come osservare il terreno, dove schierare gli uomini, come proteggere il campo, quando aprire il fuoco e come reagire alle informazioni disponibili.',
+    en: 'The player takes command of an infantry platoon assigned to defend a drift. Decisions concern how to observe the terrain, where to position the men, how to protect the camp, when to open fire and how to respond to the available information.'
   },
 
   purpose: {
-    it: 'Trasformare un classico racconto di apprendimento tattico in un’esperienza interattiva sicura, centrata su giudizio di comando, preparazione della difesa, iniziativa ed economia delle forze. Al termine, il profilo “Art of Command” restituisce una lettura della condotta emersa dalle scelte del giocatore. Un After Action Report anonimo consente inoltre di raccogliere riflessioni dopo l’esperienza.',
-    en: 'Transform a classic tactical learning narrative into a safe interactive experience focused on command judgement, defensive preparation, initiative and economy of force. At the end, the “Art of Command” profile provides a reading of the conduct emerging from the player’s choices. An anonymous After Action Report also supports post-game reflection.'
+    it: 'Trasformare un classico racconto di addestramento tattico in un’esperienza interattiva sicura, centrata su giudizio di comando, preparazione della difesa, iniziativa ed economia delle forze. Al termine, il profilo “Art of Command” restituisce una lettura della condotta emersa dalle scelte del giocatore. Un After Action Report anonimo consente inoltre di raccogliere riflessioni dopo l’esperienza.',
+    en: 'Transform a classic tactical training narrative into a safe interactive experience focused on command judgement, defensive preparation, initiative and economy of force. At the end, the “Art of Command” profile provides a reading of the conduct emerging from the player’s choices. An anonymous After Action Report also supports post-game reflection.'
   },
 
   attribution: {
-    it: 'Ideazione, adattamento e sviluppo indipendente di Adriano Pantaleo. Gioco HTML5 ispirato al classico racconto tattico The Defence of Duffer’s Drift di Ernest D. Swinton e pubblicato su itch.io. Il progetto dichiara assistenza dell’intelligenza artificiale per codice e grafica.',
-    en: 'Designed, adapted and independently developed by Adriano Pantaleo. An HTML5 game inspired by Ernest D. Swinton’s classic tactical narrative The Defence of Duffer’s Drift and published on itch.io. The project discloses AI assistance for code and graphics.'
+    it: 'Ideazione, adattamento e sviluppo indipendente di Adriano Pantaleo. Gioco HTML5 ispirato al classico racconto tattico The Defence of Duffer’s Drift di Ernest D. Swinton e pubblicato su itch.io.',
+    en: 'Designed, adapted and independently developed by Adriano Pantaleo. An HTML5 game inspired by Ernest D. Swinton’s classic tactical narrative The Defence of Duffer’s Drift and published on itch.io.'
   },
 
   institution: {
@@ -143,11 +143,11 @@ consoles: [
   },
 
   keywords: [
-    'defence',
-    'strategy',
+    'history',
+    'military tactics',
     'leadership',
-    'evaluation',
-    'training'
+    'decision-making',
+    'infantry training'
   ],
 
 image: "assets/projects/duffers-drift-cover.png",
