@@ -101,6 +101,7 @@ window.GSS.projects = [
 
   ownership: 'independent',
   console: 'educational-wargames',
+  additionalConsoles: ['experimental-games'],
   status: 'play',
   sections: ['projects'],
 
