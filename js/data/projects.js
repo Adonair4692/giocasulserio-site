@@ -94,15 +94,73 @@ window.GSS.projects = [
 
 // INIZIO PROGETTO: duffers-drift
 {
-  id: 'duffers-drift', slug: 'duffers-drift', visible: true, featured: true,
-  ownership: 'independent', console: 'educational-wargames', status: 'coming-soon', sections: ['projects'],
-  title: {it: 'Duffer’s Drift', en: 'Duffer’s Drift'},
-  type: {it: 'Gioco digitale di apprendimento tattico', en: 'Digital tactical learning game'},
-  summary: {it: 'Un’esperienza digitale indipendente sull’apprendimento attraverso errore, iterazione e decisione tattica.', en: 'An independent digital experience about learning through error, iteration and tactical decision-making.'},
-  description: {it: 'Il progetto traduce una classica struttura di apprendimento iterativo in un’esperienza digitale accessibile, nella quale ogni tentativo rende visibili nuove informazioni e nuove possibilità decisionali.', en: 'The project translates a classic iterative learning structure into an accessible digital experience where each attempt reveals new information and choices.'},
-  purpose: {it: 'Apprendimento esperienziale, decisione e riflessione sull’errore.', en: 'Experiential learning, decision-making and reflection on error.'},
-  attribution: {it: 'Produzione indipendente di Adriano Pantaleo.', en: 'Independent production by Adriano Pantaleo.'}, institution: {it: '', en: ''},
-  keywords: ['defence', 'strategy', 'evaluation', 'training'], image: 'assets/projects/duffers-drift.svg', actions: [], linkedPublications: []
+  id: 'duffers-drift',
+  slug: 'duffers-drift',
+  visible: true,
+  featured: true,
+
+  ownership: 'independent',
+  console: 'educational-wargames',
+  status: 'play',
+  sections: ['projects'],
+
+  title: {
+    it: 'Duffer’s Drift',
+    en: 'Duffer’s Drift'
+  },
+
+  type: {
+    it: 'Educational wargame narrativo digitale · Apprendimento tattico',
+    en: 'Digital narrative educational wargame · Tactical learning'
+  },
+
+  summary: {
+    it: 'Un educational wargame browser-based su comando, ricognizione, occultamento, disciplina del fuoco e apprendimento attraverso le conseguenze delle proprie decisioni.',
+    en: 'A browser-based educational wargame about command, reconnaissance, concealment, fire discipline and learning through the consequences of tactical decisions.'
+  },
+
+  description: {
+    it: 'Il giocatore assume il comando di un piccolo distaccamento incaricato di difendere un guado. Deve decidere come osservare il terreno, dove schierare gli uomini, come proteggere il campo, quando aprire il fuoco e come reagire alle informazioni disponibili. Le situazioni di comando vengono riproposte in forma iterativa: ricognizione insufficiente, posizioni esposte, occultamento debole e fuoco prematuro producono conseguenze che alimentano il tentativo successivo.',
+    en: 'The player takes command of a small detachment assigned to defend a drift. Decisions concern how to observe the terrain, where to position the men, how to protect the camp, when to open fire and how to respond to the available information. Command situations are repeated iteratively: poor reconnaissance, exposed positions, weak concealment and premature fire produce consequences that inform the next attempt.'
+  },
+
+  purpose: {
+    it: 'Trasformare un classico racconto di apprendimento tattico in un’esperienza interattiva sicura, centrata su giudizio di comando, preparazione della difesa, iniziativa ed economia delle forze. Al termine, il profilo “Art of Command” restituisce una lettura della condotta emersa dalle scelte del giocatore. Un After Action Report anonimo consente inoltre di raccogliere riflessioni dopo l’esperienza.',
+    en: 'Transform a classic tactical learning narrative into a safe interactive experience focused on command judgement, defensive preparation, initiative and economy of force. At the end, the “Art of Command” profile provides a reading of the conduct emerging from the player’s choices. An anonymous After Action Report also supports post-game reflection.'
+  },
+
+  attribution: {
+    it: 'Ideazione, adattamento e sviluppo indipendente di Adriano Pantaleo. Gioco HTML5 ispirato al classico racconto tattico The Defence of Duffer’s Drift di Ernest D. Swinton e pubblicato su itch.io. Il progetto dichiara assistenza dell’intelligenza artificiale per codice e grafica.',
+    en: 'Designed, adapted and independently developed by Adriano Pantaleo. An HTML5 game inspired by Ernest D. Swinton’s classic tactical narrative The Defence of Duffer’s Drift and published on itch.io. The project discloses AI assistance for code and graphics.'
+  },
+
+  institution: {
+    it: '',
+    en: ''
+  },
+
+  keywords: [
+    'defence',
+    'strategy',
+    'leadership',
+    'evaluation',
+    'training'
+  ],
+
+  image: 'assets/projects/duffers-drift.svg',
+
+  actions: [
+    {
+      type: 'play',
+      label: {
+        it: 'Gioca su itch.io',
+        en: 'Play on itch.io'
+      },
+      url: 'https://adonair.itch.io/duffers-drift-full'
+    }
+  ],
+
+  linkedPublications: []
 },
 // FINE PROGETTO: duffers-drift
 
