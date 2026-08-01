@@ -7,7 +7,7 @@ window.GSSApp = window.GSSApp || {};
   function keywordById(id) {
     return (G.keywords || []).find(item => item.id === id);
   }
-
+function projectConsoleIds(item) {
   const ids = Array.isArray(item.consoles)
     ? item.consoles
     : [
