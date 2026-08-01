@@ -59,7 +59,11 @@ function projectConsoleItems(project) {
         
         ${consoleTags}
           
-          <span class="tag ${project.status === 'coming-soon' ? 'tag-amber' : ''}">${App.escape(App.statusLabel(project.status))}</span>
+${project.status === 'coming-soon'
+  ? `<span class="tag tag-amber">${App.escape(App.t('comingSoon'))}</span>`
+  : ''
+}
+        
         </div>
         <h3>${App.escape(App.local(project.title))}</h3>
         <p>${App.escape(App.local(project.summary))}</p>
@@ -236,7 +240,13 @@ function projectsMatchingConsole() {
           <dt>${App.escape(App.t('console'))}</dt><dd>${App.escape(consoleLabel)}</dd>
           
           <dt>${App.escape(App.t('ownership'))}</dt><dd>${App.escape(App.ownershipLabel(project.ownership))}</dd>
-          <dt>${App.escape(App.t('status'))}</dt><dd>${App.escape(App.statusLabel(project.status))}</dd>
+          
+      ${project.status === 'coming-soon'
+  ? `<dt>${App.escape(App.t('status'))}</dt>
+     <dd>${App.escape(App.t('comingSoon'))}</dd>`
+  : ''
+}
+          
           ${App.local(project.institution) ? `<dt>${App.escape(App.t('institution'))}</dt><dd>${App.escape(App.local(project.institution))}</dd>` : ''}
         </dl><div class="card-actions">${projectActions(project, false)}<button type="button" class="card-link" data-copy-link>${App.escape(App.t('copyLink'))}</button></div></aside>
       </div></section>`;
